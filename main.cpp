@@ -49,9 +49,15 @@ int main(int argc, char ** argv)
     QWindow *window = 0;
     QQmlEngine *engine = 0;
     CodeModel *model = 0;
-    model = new CodeModel();
-
     int exitCode = 0;
+
+    // Load a different QML model, careful: it will become the default "Scratchpad.qml"
+    if (argc > 1) {
+        model = new CodeModel(argv[1]);
+    }
+    else {
+        model = new CodeModel(QString("Scratchpad.qml"));
+    }
 
     // Want nicer fonts
     qputenv("QT_DF_RANGE",QByteArray("0.15"));
