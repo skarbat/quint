@@ -67,7 +67,7 @@ int main(int argc, char ** argv)
     QObject::connect(engine, SIGNAL(quit()), QCoreApplication::instance(), SLOT(quit()));
 
     //window->setWindowFlags(Qt::Window | Qt::WindowSystemMenuHint | Qt::WindowTitleHint | Qt::WindowMinMaxButtonsHint | Qt::WindowCloseButtonHint);
-    window->setWindowFlags(Qt::Window);
+    //window->setWindowFlags(Qt::Window);
     //window->setMouseGrabEnabled(true);
     app.setOverrideCursor( QCursor( Qt::BlankCursor ) );
     //window->showFullScreen();
