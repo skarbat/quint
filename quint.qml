@@ -211,7 +211,7 @@ Rectangle {
                 height: editorParent.height
                 color: "white"
                 property real fontScale: 1.0
-                font.pointSize: 25*fontScale
+                font.pointSize: 15*fontScale
                 font.family: "Courier"
                 Behavior on fontScale { NumberAnimation { duration: 500; easing.type: Easing.InOutQuint } }
                 cursorVisible: true

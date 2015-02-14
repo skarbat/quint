@@ -36,7 +36,7 @@ class CodeModel : public QObject {
     Q_PROPERTY(QString postamble READ postamble)
 
 public:
-    CodeModel();
+    CodeModel(QString scratchpad);
     QString preamble() { return m_preamble; }
     QString postamble() { return m_postamble; }
     QString program() { return m_programString; }
