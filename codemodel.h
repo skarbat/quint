@@ -25,6 +25,7 @@ SOFTWARE.
 #ifndef CODEMODEL_H
 #define CODEMODEL_H
 
+#include <QObject>
 #include <QtCore/QString>
 #include <QtCore/QStringList>
 
