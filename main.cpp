@@ -50,13 +50,13 @@ int main(int argc, char ** argv)
     QQmlEngine *engine = 0;
     CodeModel *model = 0;
     int exitCode = 0;
-
+    
     // Load a different QML model, careful: it will become the default "Scratchpad.qml"
     if (argc > 1) {
         model = new CodeModel(argv[1]);
     }
     else {
-        model = new CodeModel(QString("Scratchpad.qml"));
+        model = new CodeModel(QString("/usr/share/quint/Scratchpad.qml"));
     }
 
     // Want nicer fonts
@@ -65,10 +65,14 @@ int main(int argc, char ** argv)
 
     QQuickView *qxView = new QuintView();
     engine = qxView->engine();
+
+    const QString qmls="/usr/share/quint";
+    engine->addImportPath(QString(qmls));
+    
     window = qxView;
     qxView->rootContext()->setContextProperty("codemodel",model);
     qxView->rootContext()->setContextProperty("view",qxView);
-    qxView->setSource(QUrl::fromLocalFile("quint.qml"));
+    qxView->setSource(QUrl::fromLocalFile("/usr/share/quint/quint.qml"));
 
     QObject::connect(engine, SIGNAL(quit()), QCoreApplication::instance(), SLOT(quit()));
 

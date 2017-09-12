@@ -13,8 +13,8 @@ Rectangle {
 	Text {
 		x: 100+100*Math.sin(parent.time)
 		y: 200+100.0*Math.cos(parent.time)
-		text: "Hello World"
-		font.pixelSize: 200
+		text: "pipaOS"
+		font.pixelSize: 128
 		ColorAnimation on color {
 			from: "red"
 			to: "blue"

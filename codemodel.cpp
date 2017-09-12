@@ -30,11 +30,11 @@ CodeModel::CodeModel(QString scratchpad) {
 
     // Put some programs there
     QFile f(scratchpad); f.open(QIODevice::ReadOnly); m_program << f.readAll(); f.close();
-    f.setFileName("HelloWorld.qml"); f.open(QIODevice::ReadOnly); m_program << f.readAll(); f.close();
-    f.setFileName("Raspberry.qml"); f.open(QIODevice::ReadOnly); m_program << f.readAll(); f.close();
-    f.setFileName("Julia.qml"); f.open(QIODevice::ReadOnly); m_program << f.readAll(); f.close();
-    f.setFileName("Fly.qml"); f.open(QIODevice::ReadOnly); m_program << f.readAll(); f.close();
-    f.setFileName("VideoFx.qml"); f.open(QIODevice::ReadOnly); m_program << f.readAll(); f.close();
+    f.setFileName("/usr/share/quint/HelloWorld.qml"); f.open(QIODevice::ReadOnly); m_program << f.readAll(); f.close();
+    f.setFileName("/usr/share/quint/Raspberry.qml"); f.open(QIODevice::ReadOnly); m_program << f.readAll(); f.close();
+    f.setFileName("/usr/share/quint/Julia.qml"); f.open(QIODevice::ReadOnly); m_program << f.readAll(); f.close();
+    f.setFileName("/usr/share/quint/Fly.qml"); f.open(QIODevice::ReadOnly); m_program << f.readAll(); f.close();
+    f.setFileName("/usr/share/quint/VideoFx.qml"); f.open(QIODevice::ReadOnly); m_program << f.readAll(); f.close();
 }
 
 void CodeModel::setProgram(QString program)

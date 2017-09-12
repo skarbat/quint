@@ -1,1 +1,11 @@
 ./quint /usr/bin
+./Scratchpad.qml /usr/share/quint
+./Raspberry.qml /usr/share/quint
+./VideoFx.qml /usr/share/quint
+./HelloWorld.qml /usr/share/quint
+./Fly.qml /usr/share/quint
+./quint.qml /usr/share/quint
+./Julia.qml /usr/share/quint
+./MiniRaspberry.png /usr/share/quint
+./Raspberry.png /usr/share/quint
+./qt.png /usr/share/quint

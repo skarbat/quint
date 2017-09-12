@@ -1,3 +1,9 @@
+quint (1.1-0) unstable; urgency=low
+
+  * added debian packaging
+
+ -- Albert Casals <skarbat@gmail.com>  Wed, 13 Sep 2017 00:03:29 +0100
+
 quint (1.0-0) unstable; urgency=low
 
   * quint initial version
